@@ -1,0 +1,652 @@
+@font-face {
+  font-family: "ArDecode";
+  src: url("../fonts/ARDECODE.ttf");
+}
+
+body{
+	background:#ffffff;
+  font-family: 'Droid Sans', sans-serif;
+
+}
+a{
+	text-decoration:none;
+}
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+.clearfix:after {
+	clear: both;
+}
+
+.col-1-of-3{
+  display: inline-block;
+  width: 32%;
+  margin-left: -3px;
+  padding-right: 2%;
+  vertical-align: top;
+}
+
+.col-2-of-3{
+  display: inline-block;
+  width: 61%;
+  margin-left: -3px;
+  vertical-align: top;
+}
+
+
+.col-1-of-3:nth-child(3n){
+  padding-right: 0;
+}
+.col-1-of-5{
+  display: inline-block;
+  width: 19%;
+  margin-left: -3px;
+  padding-right: 1%;
+  vertical-align: top;
+}
+.col-1-of-5:nth-child(3n){
+  padding-right: 0;
+}
+
+
+.col-2-of-5{
+  display: inline-block;
+  margin-left: -3px;
+  width: 39%;
+  padding-right: 1%;
+  vertical-align: top;
+}
+.col-1-of-4{
+  display: inline-block;
+  margin-right: -4px;
+  width: 22%;
+  padding-right: 4%;
+}
+
+.col-1-of-4:nth-child(4n){
+  padding-right: 0;
+}
+.pdtop-15{
+  padding-top: 15px;
+}
+.pdtop-30{
+  padding-top: 30px;
+}
+.pdtop-70{
+  padding-top: 70px;
+}
+.pdbot-30{
+  padding-bottom: 30px;
+}
+.h3-text{
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #2a2e33;
+  padding-bottom: 20px;
+}
+.h4-text{
+  font-size: 1em;
+  font-weight: 400;
+  color: #2a2e33;
+  padding-bottom: 20px;
+}
+.h3-text-center{
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #2a2e33;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#header-top{
+  width: 100%;
+  background: #2a2e33;
+}
+#cnt-header-top{
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+#logo,#main-nav{
+  display: inline-block;
+}
+#logo{
+  width: 39%;
+}
+#logo img{
+  vertical-align: middle;
+}
+#main-nav{
+  width: 60%;
+  text-align: right;
+}
+#main-nav li{
+  display: inline-block;
+}
+#main-nav a{
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  padding: 42px 15px;
+}
+#main-nav a:hover{
+  color: #fde600;
+}
+
+#main-nav a.active{
+  color: #fde600;
+  border-top: 2px solid #fde600;
+  box-sizing: border-box;
+}
+
+#banner{
+  width: 100%;
+  background: url(../images/banner-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+}
+#text-banner{
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  padding: 100px 0;
+  color: #FFF;
+  text-align: center;
+  opacity: 0.8;
+}
+#banner h2{  
+  font-family: 'Droid Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+  padding: 25px 0;
+  border-bottom: 1px dashed #FFF;
+}
+#banner h3{
+  font-size: 1.7em;
+  text-transform: uppercase;
+  width: 100%;
+  display: inline-block;
+  padding: 30px 0;
+}
+#banner h4{
+  font-size: 1.4em;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed #FFF;
+}
+#booking{
+  display: block;
+  width: 80%;  
+  margin: 0 auto;
+  background: #2a2e33;
+  position: absolute;
+  left: 10%;
+  top:90%;
+}
+
+#booking form{
+  padding: 15px;
+}
+#booking table{  
+  width: 100%;
+}
+#booking tr{
+  padding-bottom: 5px;
+}
+#booking table td{  
+  width: 140px;
+}
+
+#booking table td span{  
+  color: #fde600;  
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+#booking table td .span-msg{
+  color: red !important;
+}
+#booking input[type="text"], #booking input[type="submit"],#booking select{
+  padding: 10px 15px;
+  width: 80%;
+  font-size: 1em;
+  border: 1px solid #fff;
+  border-radius: 7px;
+} 
+#booking select{
+  width: 94%;
+  background: #fff;
+}
+#booking input[type="submit"]{
+  width: 100%;
+  background: #fde600;
+  color: #000;
+  font-weight: bold;
+  border: 1px solid #fde600;
+}
+#wrapper{
+  width: 100%;
+  display: block;
+}
+#slide{
+  display: block;
+  width: 100%;
+  background: url(../images/slide-bg.png);
+  background-position: center;
+  border-bottom: 2px solid #2a2e33;
+}
+#cnt-slide{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+#description{
+  text-align: center;
+}
+.h2-text-center{
+  font-size: 3em;
+  font-weight: 400;
+  color: #2a2e33;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.h2-title-ardecode{
+  font-family: 'ArDecode';
+  font-size: 3em;
+  font-weight: 400;
+  color: #2a2e33;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#description p{
+  line-height: 20px;
+  color: #2a2e33;
+  font-family: 'Quicksand', sans-serif;
+}
+#main-slide{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  position: relative;   
+}
+#left-arrow, #right-arrow{
+  width:55px;
+  height: 85px;
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+}
+#left-arrow{
+  background: url(../images/left-arrow.png) no-repeat;
+  left: 0;
+}
+#right-arrow{
+  background: url(../images/right-arrow.png) no-repeat;
+  right: 0;
+}
+.slide{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.circle{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 80%;
+  border-radius: 50%;
+  border: 2px solid #000;
+  box-sizing: content-box;
+}
+#content{
+  width: 100%;
+  background: url('../images/content-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+#list-room{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.room-img{
+  width: 100%;
+  padding-top: 50%;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+.room-info{
+  padding-top: 15px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+.room-name{
+  font-size: 1.5em;
+  color:#000;
+}
+.room-price{
+  font-size: 1.2em;
+  padding-top: 10px;
+  font-style: italic;
+}
+.room-desc{
+  padding:15px 0;
+  color: #000;
+}
+.room-service img{
+  padding-right: 3px;
+}
+
+.avaible-room{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+.avaible-room-info > div {
+  display: inline-block;
+  margin: -3px;
+  vertical-align: top;
+}
+.avaible-room-img{
+  width: 30%;
+}
+.avaible-room-text{
+  width: 56%;
+  padding: 0px 2%;
+  line-height: 25px;
+}
+.avaible-room-button{
+  width: 10%;
+  padding-top: 5%;
+}
+.booking{
+  font-size: 1.5em;
+  width: 100%;
+  background: #fde600;
+  color: #000;
+  font-weight: bold;
+  border: 1px solid #000;
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 7px;
+}
+#testimonial{
+  width: 100%;
+  background: #e7cb2c;
+  min-height: 100px;
+}
+footer{
+  width: 100%;
+  background: #333333;
+}
+#main-footer{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 30px 0;
+}
+.last-col{
+  padding-right: 0;
+}
+.h3-title-footer{
+  padding-bottom: 20px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+.param-text{
+  padding-bottom: 20px;
+  line-height: 20px;
+  font-size: 0.8em;
+}
+.param-text-center{
+  padding-bottom: 20px;
+  line-height: 20px;
+  font-size: 0.8em;
+  text-align: center;
+}
+#login table{
+  width: 100%;
+}
+#login table tr{
+  display: block;
+  padding-bottom: 5px;
+}
+#login table h4{
+  line-height: 20px;
+  font-size: 0.8em;
+}
+#login input[type="text"],#login input[type="email"], #login input[type="password"]{
+  color: #fff;
+  width: 90%;
+  background: #333;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 7px 10px;
+}
+#bot-footer{
+  width: 100%;
+  padding-top: 30px;
+  background: #1f1f1f;
+  vertical-align: bottom;
+}
+#detail-room{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.img-detail-slide{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+.img-detail-slide img{
+  width: 100%;
+}
+.text-detail{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+.other-rooms{
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+.other-rooms h2{
+  padding:30px;
+}
+.content-list{  
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 80%; 
+}
+.btn-submit{
+  background: #fde600;
+  color: #000;
+  font-size: 0.8em;
+  font-weight: bold;
+  border: 1px solid #fde600;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  min-width: 104px;
+}
+#done-booking{
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.form-group{
+  padding-bottom: 20px;
+}
+.control-label{
+  vertical-align: -62%;
+  text-align: right;
+}
+.form-control{
+  display: block;
+  width: 80%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;  
+  background-image: none;
+  border: 1px solid #ccc;
+}
+.readonly-input{
+  border: none;
+  background: transparent;
+  font-size: 1.1em;
+}
+#content-contact{
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 50px;
+}
+#maps{
+  margin: 0 auto;
+  width: 100%;
+}
+#maps iframe{
+  width: 100%;
+  height: 300px;
+}
+#contact-info, #contact-form{
+  display: inline-block;
+  vertical-align: top;
+}
+#contact-info{
+  width: 30%;
+  background: #fff;
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  margin-top: 10px;
+}
+#contact-form{
+  padding-left: 5%;
+  width: 64%;
+}
+.form-item{
+  padding-bottom: 15px;
+  display: inline-block;
+}
+.form-item-50{
+  margin-left: -3px;
+  width: 45%;
+  padding-right: 10%;
+}
+.form-item-100{
+  margin-left: -3px;
+  width: 100%;
+}
+.form-item-50:nth-last-child(2n){
+  padding-right: 0;
+}
+.form-item input,textarea{
+  width: 100%;
+  font-size: 1.2em;  
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.form-item #submit{
+  width: 100px;
+  background: #fde600;
+  color: #000;
+  font-size: 0.8em;
+  font-weight: bold;
+  border: 1px solid #fde600;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+.form-label{
+  line-height: 2;
+}
+
+
+@media all and (max-width: 1240px)
+{
+  #main-nav a {
+    padding: 42px 13px;
+  }
+}
+
+@media all and (max-width: 1180px)
+{
+  .booking {
+    font-size: 0.9em;
+  }
+}
+@media all and (max-width: 1160px)
+{
+  #main-nav a {
+    padding: 42px 10px;
+  }
+}
+
+@media all and (max-width: 1117px)
+{
+  #main-nav a {
+    padding: 42px 8px;
+  }
+}
+@media all and (max-width: 1073px)
+{
+  #main-nav a {
+    padding: 42px 5px;
+  }
+  .booking {
+    font-size: 0.75em;
+  }
+}
+
+@media all and (max-width: 1005px)
+{
+  #logo{width: 30%;}
+  #main-nav{width: 69%}
+  #main-nav a {
+    padding: 42px 8px;
+  }
+}
+
+
+@media all and (max-width: 960px)
+{
+  #logo{width: 20%;}
+  #logo img{width: 100%}
+  #main-nav{width: 79%}
+  #main-nav a {
+    font-size: 0.9em;
+    padding: 42px 8px;
+  }
+  #booking input[type="text"], #booking input[type="submit"], #booking select {
+    width: 70%;
+  }
+  #booking select {
+    width: 95%;
+    font-size: 0.9em;
+  }
+  #booking input[type="submit"] {
+    font-size: 0.9em;
+    width: 100%;
+}
+}
